@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchTVSeriesDetails } from "../model/MovieModel.js"; // Adjust the import path as needed
 import styles from "./TVSeriesDetails.module.css"; // Import the CSS module
+import SpinnerFullPage from "./SpinnerFullPage.jsx";
 
 function TVSeriesDetails() {
   const { id } = useParams();
@@ -20,7 +21,7 @@ function TVSeriesDetails() {
     getSeriesDetails();
   }, [id]);
 
-  if (!series) return <div>Loading...</div>;
+  if (!series) return <SpinnerFullPage />;
 
   return (
     <div className={styles.container}>

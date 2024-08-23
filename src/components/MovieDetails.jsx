@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchMovieDetails } from "../model/MovieModel.js";
 import styles from "./MovieDetails.module.css";
+import SpinnerFullPage from "./SpinnerFullPage.jsx";
 // Adjust the import path as needed
 
 function MovieDetails() {
@@ -21,7 +22,7 @@ function MovieDetails() {
     getMovieDetails();
   }, [id]);
 
-  if (!movie) return <div>Loading...</div>;
+  if (!movie) return <SpinnerFullPage />;
 
   return (
     <div className={styles.detailsContainer}>

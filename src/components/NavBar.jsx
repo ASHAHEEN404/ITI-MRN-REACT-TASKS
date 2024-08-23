@@ -1,5 +1,7 @@
 import { AppBar, Button, Toolbar, Typography } from "@mui/material";
 import { Link } from "react-router-dom"; // Use Link from react-router-dom
+import styles from "./NavBar.module.css";
+import Logo from "../assets/logo.png";
 
 function NavBar() {
   return (
@@ -9,6 +11,9 @@ function NavBar() {
     >
       <Toolbar
         sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
           width: "100%",
           maxWidth: "1475px", // Set a maximum width
           margin: "0 auto", // Center the toolbar
@@ -20,21 +25,23 @@ function NavBar() {
           border: "1px solid rgba(255, 255, 255, 0.2)", // Optional: border to enhance the glass effect
         }}
       >
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          LOGO
-        </Typography>
-        <Button color="inherit" component={Link} to="/">
-          Movies
-        </Button>
-        <Button color="inherit" component={Link} to="/actors">
-          Actors
-        </Button>
-        <Button color="inherit" component={Link} to="/tvshows">
-          TV Shows
-        </Button>
-        <Button color="inherit" component={Link} to="/series">
-          Series
-        </Button>
+        <Link to="/">
+          <img className={styles.img} src={Logo} alt="logo" />
+        </Link>
+        <div>
+          <Button color="inherit" component={Link} to="/">
+            Movies
+          </Button>
+          <Button color="inherit" component={Link} to="/actors">
+            Actors
+          </Button>
+          <Button color="inherit" component={Link} to="/tvshows">
+            TV Shows
+          </Button>
+          <Button color="inherit" component={Link} to="/series">
+            Series
+          </Button>
+        </div>
       </Toolbar>
     </AppBar>
   );
