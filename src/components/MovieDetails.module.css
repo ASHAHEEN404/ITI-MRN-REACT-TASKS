@@ -1,0 +1,47 @@
+.detailsContainer {
+  display: flex;
+  padding: 20px;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.posterContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.infoContainer {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.overview {
+  margin-bottom: 20px;
+}
+
+.additionalInfo {
+  font-size: 1rem;
+}
+
+.additionalInfo p {
+  margin: 5px 0;
+}
