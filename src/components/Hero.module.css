@@ -1,0 +1,71 @@
+/* BackgroundEffect.module.css */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent overflow */
+  display: flex;
+  flex-direction: column; /* Allow stacking vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  background-color: rgba(
+    18,
+    18,
+    18,
+    1
+  ); /* Background color for the container */
+}
+
+.background,
+.foreground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/HeroTest.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px); /* Blur the background */
+  border-radius: 25px;
+  z-index: 1; /* Below the foreground image */
+}
+.foreground {
+  position: relative; /* Use relative positioning to ensure it’s centered properly */
+  width: 75%;
+  height: 75%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+  z-index: 2; /* On top of the blurred background */
+}
+.content {
+  position: absolute;
+  bottom: 92px; /* Adjusted distance from bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.2275),
+    rgba(255, 255, 255, 0.0975)
+  );
+  width: 75%; /* Adjusted width to fit within the container */
+  max-width: 1152px; /* Optional: Max width to prevent too wide content */
+  box-sizing: border-box; /* Include padding and border in width */
+  padding: 20px;
+  overflow: hidden; /* Prevent content overflow */
+  z-index: 3; /* Ensure content is above both images */
+  color: white; /* Text color */
+  text-align: center;
+  border-radius: 25px;
+}

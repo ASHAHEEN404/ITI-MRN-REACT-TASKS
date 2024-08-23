@@ -1,0 +1,6 @@
+/* HomePage.module.css */
+.homePageContainer {
+  display: flex;
+  flex-direction: column; /* Stack components vertically */
+  align-items: center; /* Center components horizontally */
+}

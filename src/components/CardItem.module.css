@@ -1,0 +1,37 @@
+.container {
+  width: 1330px;
+  padding: 4px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.containerLink {
+  color: black;
+}
+
+.card {
+  position: relative;
+  width: 110px;
+}
+
+.card p {
+  position: absolute;
+  bottom: -14px;
+  width: 100%;
+  left: 0;
+  border-radius: 25px;
+  background-image: linear-gradient(
+    to right,
+    rgba(208, 205, 205, 0.319),
+    rgba(255, 255, 255, 0.098)
+  );
+  padding: 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 150px;
+  height: 240px;
+  border-radius: 25px;
+}
