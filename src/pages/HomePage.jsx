@@ -40,9 +40,9 @@ function HomePage() {
   return (
     <div className={styles.homePageContainer}>
       <Hero movie={featuredMovie} />
-      <CardsList title="Movies" items={movies} />
-      <CardsList title="Series" items={shows} />
-      <CardsList title="Upcoming" items={upcoming} />
+      <CardsList title="Movies" items={movies} type="movie" />
+      <CardsList title="Series" items={shows} type="series" />
+      <CardsList title="Upcoming Movies" items={upcoming} type="movie" />
       <ActorList title="Famous Actors" items={popular} />
     </div>
   );

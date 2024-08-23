@@ -40,10 +40,17 @@ const fetchMovieDetails = async (movieId) => {
   return await fetchFromApi(BASE_URL_MOVIE_DETAILS);
 };
 
+// Fetch details for a specific TV series
+const fetchTVSeriesDetails = async (seriesId) => {
+  const BASE_URL_TV_DETAILS = `https://api.themoviedb.org/3/tv/${seriesId}?api_key=${API_KEY}&language=en-US`;
+  return await fetchFromApi(BASE_URL_TV_DETAILS);
+};
+
 export {
   fetchRecentMovies,
   fetchRecentShows,
   fetchUpcomingMovies,
   fetchPopularMovies,
   fetchMovieDetails,
+  fetchTVSeriesDetails,
 };

@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  padding: 20px;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.poster {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.details {
+  flex: 1;
+}
+
+.details h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.details p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.details strong {
+  font-weight: bold;
+}
