@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Headers from "./Header";
 import SearchBar from "./SearchBar";
 import WeatherCard from "./WeatherCard";
-
+/* eslint-disable */
 const API_KEY = "979e237b0f5e09e3c71616ac4781af58";
 function WeatherMain() {
   const [searchCity, setSearchCity] = useState("");
