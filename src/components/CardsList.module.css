@@ -37,3 +37,9 @@
   font-size: 15px; /* Adjust font size as needed */
   cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
 }
+
+.Link {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}

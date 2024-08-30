@@ -29,15 +29,13 @@ function NavBar() {
           <img className={styles.img} src={Logo} alt="logo" />
         </Link>
         <div>
-          <Button color="inherit" component={Link} to="/">
+          <Button color="inherit" component={Link} to="/moviessection">
             Movies
           </Button>
           <Button color="inherit" component={Link} to="/actors">
             Actors
           </Button>
-          <Button color="inherit" component={Link} to="/tvshows">
-            TV Shows
-          </Button>
+
           <Button color="inherit" component={Link} to="/series">
             Series
           </Button>

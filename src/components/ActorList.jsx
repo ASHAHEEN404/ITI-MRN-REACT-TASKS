@@ -1,12 +1,16 @@
 import styles from "./CardsList.module.css";
 import ActorCard from "./ActorCard";
+import { Link } from "react-router-dom";
+import ActorStyle from "./ActorList.module.css";
 
 function ActorList({ title, items }) {
   return (
     <>
       <div className={styles.categoryContainer}>
         <h6>{title}</h6>
-        <p>See All</p>
+        <Link className={ActorStyle.Link} to="/actors">
+          See All
+        </Link>
       </div>
 
       <div className={styles.gridContainer}>
